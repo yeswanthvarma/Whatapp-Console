@@ -1,0 +1,123 @@
+/*------------------------ Styling For Whatapp Chat Layout----------------------------*/
+.whatsapp-chat-layout {
+    width: 100%;
+    max-width: 350px;
+    background-color: #e5ddd5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+     
+}
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #075e54;
+  border-radius: 8px 8px 0 0;
+  color: white;   
+}  
+
+.chat-actions i {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+
+  .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+
+  .user-details h4 {
+      margin: 0;
+      font-size: 1.1rem;
+  }
+
+  .user-details span {
+      font-size: 0.9rem;
+      color: #25d366;
+  }
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;    
+}
+
+.message-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &.sender {
+    align-items: flex-end;
+
+    .message-content {
+      background-color: #dcf8c6;
+    }
+  }
+
+  &.receiver {
+    align-items: flex-start;
+
+    .message-content {
+      background-color: #ffffff;
+    }
+  }
+
+  
+}
+
+.message-content {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.message-info {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+}
+
+.send-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
